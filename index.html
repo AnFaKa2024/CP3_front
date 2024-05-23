@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Declaração de Compra de Carro</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/declaracao.js" defer></script>
+  </head>
+
+  <body>
+    <h1><b>Declaração de Compra de Carro</b></h1>
+
+    <h3>Insira seus dados nos campos abaixo</h3>
+
+    <form action="">
+      <fieldset>
+        <div class="nome">
+          <label for="compNomeInput">Nome do Comprador:</label>
+          <input
+            type="text"
+            id="compNomeInput"
+            oninput="updateDeclaracao('compNome', this.value)"
+          /><br />
+        </div>
+
+        <div class="cpf">
+          <label for="compCPFInput">CPF do Comprador:</label>
+          <input
+            type="text"
+            id="compCPFInput"
+            oninput="updateDeclaracao('compCPF', this.value)"
+          /><br />
+        </div>
+
+        <div class="marca">
+          <label for="marcaInput">Marca do Carro:</label>
+          <input
+            type="text"
+            id="marcaInput"
+            oninput="updateDeclaracao('marca', this.value)"
+          /><br />
+        </div>
+
+        <div class="modelo">
+          <label for="modeloInput">Modelo do Carro:</label>
+          <input
+            type="text"
+            id="modeloInput"
+            oninput="updateDeclaracao('modelo', this.value)"
+          /><br />
+        </div>
+
+        <div class="ano">
+          <label for="anoInput">Ano do Carro:</label>
+          <input
+            type="text"
+            id="anoInput"
+            oninput="updateDeclaracao('ano', this.value)"
+          /><br />
+        </div>
+
+        <div class="placa">
+          <label for="placaInput">Placa do Carro:</label>
+          <input
+            type="text"
+            id="placaInput"
+            oninput="updateDeclaracao('placa', this.value)"
+          /><br />
+        </div>
+
+        <div class="nomevend">
+          <label for="vendNameInput">Nome do Vendedor:</label>
+          <input
+            type="text"
+            id="vendNameInput"
+            oninput="updateDeclaracao('vendName', this.value)"
+          /><br />
+        </div>
+
+        <div class="cpfvend">
+          <label for="vendCPFInput">CPF do Vendedor:</label>
+          <input
+            type="text"
+            id="vendCPFInput"
+            oninput="updateDeclaracao('vendCPF', this.value)"
+          /><br />
+        </div>
+
+        <div class="preco">
+          <label for="precoInput">Preço do Carro:</label>
+          <input
+            type="text"
+            id="precoInput"
+            oninput="updateDeclaracao('preco', this.value)"
+          /><br />
+        </div>
+
+        <div class="data">
+          <label for="dataInput">Data:</label>
+          <input
+            type="text"
+            id="dataInput"
+            oninput="updateDeclaracao('data', this.value)"
+          /><br />
+        </div>
+      </fieldset>
+    </form>
+
+    <div class="lay"><p>Escolha uma opção de layout para a declaração</p></div>
+    <div class="buttons">
+      <button onclick="setStyle('classico')">Clássico</button>
+      <button onclick="setStyle('moderno')">Moderno</button>
+      <button onclick="setStyle('esporte')">Esporte</button>
+    </div>
+
+    <div id="declaracao" class="declaracao">
+      <p>
+        Eu, <span id="compNome">___________________</span> , portador(a) do CPF
+        <span id="compCPF">___________________</span> , declaro ter adquirido o
+        veículo da marca <span id="marca">___________________</span> , do modelo
+        <span id="modelo">___________________</span> , fabricado no ano de
+        <span id="ano">___________________</span> , de emplacação
+        <span id="placa">___________________</span> do então vendedor
+        <span id="vendName">___________________</span> , CPF do vendedor
+        <span id="vendCPF">___________________</span> . O valor total da
+        transação foi de <span id="preco">___________________</span> reais. A
+        compra foi realizada na data de
+        <span id="data">___________________</span>.
+      </p>
+      <p>
+        Declaro estar ciente e de acordo com todas as condições do veículo e
+        confirmo o recebimento do mesmo.
+      </p>
+      <h2>Assinaturas:</h2>
+      <p>Comprador: __________________________________________</p>
+      <p>Vendedor: ___________________________________________</p>
+      <div class="car-image" id="carImage"></div>
+    </div>
+
+    <ul class="car-list">
+      <li onclick="changeCarImage('/imagem/Fusca.jpg')">Fusca</li>
+      <li onclick="changeCarImage('/imagem/brasilia.jpg')">Brasilia</li>
+      <li onclick="changeCarImage('/imagem/cobra.jpg')">Shelby Cobra</li>
+      <li onclick="changeCarImage('/imagem/doge.jpg')">Doge</li>
+      <li onclick="changeCarImage('/imagem/puma.jpg')">Puma</li>
+      <li onclick="changeCarImage('/imagem/santana.jpg')">Santana</li>
+      <li onclick="changeCarImage('/imagem/suzuki-vitara.jpg')">Suzuki-Vitara</li>
+      <li onclick="changeCarImage('/imagem/uno.jpg')">Uno</li>
+      <li onclick="changeCarImage('/imagem/kombi.jpg')">Kombi</li>
+      <li onclick="changeCarImage('/imagem/silver.jpg')">Silverado</li>
+    </ul>
+
+   
+  </body>
+</html>

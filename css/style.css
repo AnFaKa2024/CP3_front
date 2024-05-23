@@ -1,0 +1,158 @@
+*{
+  margin:0;
+  padding: 0;
+  
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgba(61, 233, 184, 0.441);
+}
+
+.declaracao {
+  width: 90vw;
+  margin-left: 2vw;
+  padding: 2vw;
+  border: 0.2vw solid #ccc;
+  margin-bottom: 2vw;
+}
+
+h1{
+  font-size: 3em;
+  text-align: center;
+}
+
+.lay{
+  margin-top: 5vw;
+  text-align: center;
+  text-decoration: underline;
+
+}
+
+h3{
+  margin-top: 3vw;
+  text-indent: 30px;
+  text-decoration:underline;
+}
+
+h2{
+  font-size: 2em;
+  padding: 2%;
+}
+
+fieldset{
+  margin-top: 3vw;
+  padding: 1vw;
+  line-height: 2.3vw;
+  border: #ccc;
+}
+
+.buttons{
+  margin-top: 3vw;
+  text-align: center;
+  
+}
+
+.nome{
+  margin-left: 3vw;
+}
+
+.cpf{
+  margin-top:-2vw;
+  margin-left: 34vw;
+}
+
+.marca{
+  margin-top:-2vw;
+  margin-left: 64vw;
+}
+
+.modelo{
+  margin-left:3vw;
+}
+
+.ano{
+  margin-top:-2vw;
+  margin-left: 34vw;
+}
+
+.placa{
+  margin-top:-2vw;
+  margin-left: 64vw;
+}
+
+.nomevend{
+  margin-left: 3vw;
+}
+
+.cpfvend{
+  margin-top:-2vw;
+  margin-left: 34vw;
+}
+
+.preco{
+  margin-top:-2vw;
+  margin-left: 64vw;
+}
+
+.data{
+  margin-top:1vw;
+  margin-left: 34vw;
+}
+
+p {
+  font-size: 1.2em;
+  line-height: 1.5;
+}
+
+h2{
+  margin-top: 5vw;
+}
+
+ul{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.buttons {
+  margin-bottom: 1vw;
+}
+
+.car-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.car-list li {
+  cursor: pointer;
+  margin: 5px 0;
+  color: blue;
+  text-decoration: underline;
+}
+
+.car-image {
+  width: 358px;
+  height: 250px;
+  border: 1px solid #ccc;
+  margin-top: -125px;
+  margin-left: 60vw;
+}
+
+/* Estilos para os temas */
+.classico {
+  background-color: #f0e68c;
+  color: #000;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.moderno {
+  background-color: #e0e0e0;
+  color: #333;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+.esporte {
+  background-color: #1e90ff;
+  color: #fff;
+  font-family: 'Impact', 'Charcoal', sans-serif;
+}
